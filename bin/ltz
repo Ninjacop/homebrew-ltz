@@ -1,7 +1,7 @@
 #!/bin/bash
 
 source $HOME/ltz/lib/loadcpp.sh
-source $HOME/.tz/lib/loadbash.sh
+source $HOME/ltz/lib/loadbash.sh
 source $HOME/ltz/lib/loaddocs.sh
 source $HOME/ltz/lib/loadpython.sh
 
@@ -15,7 +15,7 @@ function init ()
         echo "Setting PATH..."
         echo >> $HOME/.bash_profile
         echo "#Setting PATH for ltz" >> $HOME/.bash_profile
-        echo "PATH=\"\$PATH:\$HOME/.ltz/bin\"" >> $HOME/.bash_profile
+        echo "PATH=\"\$PATH:\$HOME/ltz/bin\"" >> $HOME/.bash_profile
         echo "export PATH" >> $HOME/.bash_profile
     fi 
 }
@@ -25,43 +25,53 @@ function ltz ()
 {
     Type="$1"
     Name="$2"
-
-    echo "Generating folders..."
     echo ""
+    echo "Generating folders..."
 
-    if [ $Type = "Cplus" ] || [ $Type = "cplus" ]
+    if [[ $Type = "" ]] && [[ $Name = "" ]]
+    then 
+        if grep -q "#Setting PATH for ltz" $HOME/.bash_profile
+        then 
+            echo "ERROR: Cannot create a new Project directory if no language and name is given"
+        else 
+            init
+        fi
+    
+
+    elif [[ $Type = "Cplus" ]] || [[ $Type = "cplus" ]]
     then 
         cpp-folders
 
-    elif [ $Type = "" ]
+    elif [[ $Type = "" ]]
     then    
         echo "ERROR: Cannot create a new Project directory because the language is unsupported or you did not type in a language"
         echo ""
         echo "Type \"project help\" to see all available options and such"
-    fi
+    
 
-    if [ $Type = "Bash" ] || [ $Type = "bash" ]
+    elif [[ $Type = "Bash" ]] || [[ $Type = "bash" ]]
     then
         bash-folders
 
-    elif [ $Name = "" ]
+    elif [[ $Name = "" ]]
     then
         echo "ERROR: Cannot create a new Project directory because no Project name was inputted"
         echo ""
         echo "Type \"project help\" to see all available options and such"
-    fi
+    
 
-    if [ $Type = "Python" ] || [ $Type = "python" ]
+    elif [[ $Type = "Python" ]] || [[ $Type = "python" ]]
     then
         python-folders
 
-    elif [ $Name = "" ]
+    elif [[ $Name = "" ]]
     then
         echo "ERROR: Cannot create a new Project directory because no Project name was inputted"
         echo ""
         echo "Type \"project help\" to see all available options and such"
     fi
     echo "done."
+    echo ""
     return 0
 }
 
