@@ -1,0 +1,72 @@
+#!/bin/bash
+
+source $HOME/.ltz/lib/loadcpp.sh
+source $HOME/.ltz/lib/loadbash.sh
+source $HOME/.ltz/lib/loaddocs.sh
+source $HOME/.ltz/lib/loadpython.sh
+
+#TODO: Make a cool name for my shell CLI
+
+function init ()
+{
+    if  ! grep -q "#Setting PATH for ltz" $HOME/.bash_profile
+    then
+        echo "No PATH variable detected"
+        echo "Setting PATH..."
+        echo >> $HOME/.bash_profile
+        echo "#Setting PATH for ltz" >> $HOME/.bash_profile
+        echo "PATH=\"\$PATH:\$HOME/.ltz/bin\"" >> $HOME/.bash_profile
+        echo "export PATH" >> $HOME/.bash_profile
+    fi 
+}
+
+
+function ltz ()
+{
+    Type="$1"
+    Name="$2"
+
+    echo "Generating folders..."
+    echo ""
+
+    if [ $Type = "Cplus" ] || [ $Type = "cplus" ]
+    then 
+        cpp-folders
+
+    elif [ $Type = "" ]
+    then    
+        echo "ERROR: Cannot create a new Project directory because the language is unsupported or you did not type in a language"
+        echo ""
+        echo "Type \"project help\" to see all available options and such"
+    fi
+
+    if [ $Type = "Bash" ] || [ $Type = "bash" ]
+    then
+        bash-folders
+
+    elif [ $Name = "" ]
+    then
+        echo "ERROR: Cannot create a new Project directory because no Project name was inputted"
+        echo ""
+        echo "Type \"project help\" to see all available options and such"
+    fi
+
+    if [ $Type = "Python" ] || [ $Type = "python" ]
+    then
+        python-folders
+
+    elif [ $Name = "" ]
+    then
+        echo "ERROR: Cannot create a new Project directory because no Project name was inputted"
+        echo ""
+        echo "Type \"project help\" to see all available options and such"
+    fi
+    echo "done."
+    return 0
+}
+
+# "main"
+
+init
+
+ltz $1 $2
