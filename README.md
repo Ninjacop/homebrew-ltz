@@ -40,9 +40,9 @@ This will open a seperate Terminal window, so once it is done, quit out of termi
     
 Open a terminal window and type in the below code
 
-        $ ltz { x } { y }
+        $ ltz  x  y 
 
-x is the programming language you want the project to be 
+x is the programming language you want the project to be in
 
 y is the name of the project 
     
@@ -52,7 +52,7 @@ As of v1.0.1, you can only generate projects in these langauges (not case sensit
 
 - C++ (You have to type in Cplus/cplus because "C++" and "Cpp" are reserved)
 - Bash 
-- Python
+- Python (Both 2.x and 3.x)
       
 ## Examples  
       
