@@ -15,7 +15,7 @@
     ##[1.0.1a] 
     ##Added 
     - Compatability with Python
-    - Homebrew support with ltz.rb
+    - Partial Homebrew support with ltz.rb
 
     ##Changed
     - Name of repository, ltz -> homebrew-ltz
@@ -28,4 +28,6 @@
 
 [1.0.0] - https://github.com/Ninjacop/homebrew-ltz/releases/tag/1.0.0
 
-[1.0.1b] - 
+[1.0.1a] - https://github.com/Ninjacop/homebrew-ltz/releases/tag/1.0.1
+
+[1.0.1b] - https://github.com/Ninjacop/homebrew-ltz/releases/tag/1.0.1
