@@ -1,6 +1,6 @@
 #!/bin/bash
 
-source $HOME/.ltz/lib/loaddocs.sh
+source $HOME/ltz/lib/loaddocs.sh
 
 function cpp-gitignore ()
 {
