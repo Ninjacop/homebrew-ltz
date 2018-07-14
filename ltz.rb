@@ -1,4 +1,4 @@
-class ltz < Formula
+class Ltz < Formula
     desc "An all purpose, simple, lightweight CLT that helps create projects on the fly"
     homepage "www.github.com/Ninjacop/homebrew-ltz"
     url "www.github.com/Ninjacop/homebrew-ltz/bin/ltz.tar.gz"
