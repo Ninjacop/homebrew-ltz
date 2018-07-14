@@ -4,35 +4,51 @@ An all purpose, simple, lightweight CLT that helps create projects on the fly
     
 ## Installation
 
-### This has only been tested on Mac 
+### Mac
 
 #### First Method - Git
 1. Clone this repo into your Home directory
 
-        git clone github.com/Ninjacop/ltz.git
+        $ git clone github.com/Ninjacop/ltz.git
 
-2. open a terminal window and drag and drop the "ltz" Unix Executable (located in .ltz/bin) and press enter
+3. Go into terminal and type these commands
 
-3. You're all set and ready to go!
+        $ cd ~/ltz/bin
 
+        $ open ltz
 
-#### Second Method - Downloading
+This will open a seperate Terminal window, so once it is done, quit out of terminal (Command-Q for all who don't remember)
+
+4. Open up a new terminal window and you're all set and ready to go!
+
+#### Second Method - Downloading the .zip
 1. So if you don't have git, you can download a zip of the current build
 
-2. After downloading the repo,
+2. Unzip the build in your Home directory 
+
+3. Go into terminal and type these commands
+
+        $ cd ~/ltz/bin
+
+        $ open ltz
+
+This will open a seperate Terminal window, so once it is done, quit out of terminal (Command-Q for all who don't remember)
+
+4. Open up a new terminal window and you're all set and ready to go!
   
 ## Usage
     
 Open a terminal window and type in the below code
 
-        ltz { x } { y }
+        $ ltz { x } { y }
 
 x is the programming language you want the project to be 
+
 y is the name of the project 
     
 ## Options
     
-As of v1.0.0, you can only generate projects in these langauges (not case sensitive):
+As of v1.0.1, you can only generate projects in these langauges (not case sensitive):
 
 - C++ (You have to type in Cplus/cplus because "C++" and "Cpp" are reserved)
 - Bash 
