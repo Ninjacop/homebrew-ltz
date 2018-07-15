@@ -2,22 +2,22 @@
 All notable changes to this project will be documented in this file. This change log follows the conventions of [keepachangelog.com](http://keepachangelog.com/).  
 
 ## [1.0.1b]
-## Added
+### Added
 - Cleaned up and expanded on 'Installation' on the README
     
-## Changed 
+### Changed 
 - Name of repository, homebrew-ltz -> ltz
 
-## Removed
+### Removed
 - Hombrew support (ltz.rb)
 
 
 ## [1.0.1a] 
-## Added 
+### Added 
 - Compatability with Python
 - Partial Homebrew support with ltz.rb
 
-## Changed
+### Changed
 - Name of repository, ltz -> homebrew-ltz
 
 
