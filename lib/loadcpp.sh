@@ -92,30 +92,37 @@ function cpp-make ()
 
 function cpp-folders ()
 {
+    cd $HOME
     if [[ ! -d $Name ]]
     then
-        cd $HOME
         mkdir $Name
         cd $Name
+
         mkdir bin
         mkdir build
         mkdir doc 
         mkdir include
         mkdir lib
         mkdir spike
+
         mkdir src
         cd src
         mkdir "Resource Files"
         mkdir "Template Files"
         mkdir "Header Files"
         cd ..
+
         mkdir test
+
+        cd doc 
+        intro $Name 
+        cd ..
+        
         cpp-gitignore
         cpp-make
         readme $Name
         changelog 
-        cd doc 
-        intro $Name
+        gpl3-license
     else
         echo "ERROR: Project folder \"$Name\" already exists. Delete the existing folder or make a new Project under a different name"
     fi

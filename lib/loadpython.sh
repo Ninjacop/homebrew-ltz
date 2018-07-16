@@ -12,29 +12,36 @@ function python-folders ()
         mkdir tests
         mkdir sample
         mkdir docs
-        python-gitignore
-        changelog
-        readme
-        python-license
-        python-manifest
-        python-make
-        python-requirements
-        python-setup
+
         cd docs  
         intro
         sphinx-make
         python-bat
         cd ..
+
         cd sample
         python-init-sample
         python-core
         python-helpers
         cd ..
+
         cd tests
         python-init-tests
         python-context
         python-test-advanced
         python-test-basic
+        cd ..
+
+        python-gitignore
+        changelog
+        readme
+        gpl3-license
+        python-license
+        python-manifest
+        python-make
+        python-requirements
+        python-setup
+
     else 
         echo "ERROR: Project folder \"$Name\" already exists. Delete the existing folder or make a new Project under a different name"
     fi

@@ -12,12 +12,17 @@ function bash-folders ()
         mkdir test
         mkdir bin
         mkdir lib
-        changelog
-        readme
-        bash-gitignore
+
         mkdir doc 
         cd doc 
-        intro
+        intro $Name
+        cd ..
+        
+        changelog
+        readme $Name
+        bash-gitignore
+        gpl3-license
+
     else 
         echo "ERROR: Project folder \"$Name\" already exists. Delete the existing folder or make a new Project under a different name"
     fi
