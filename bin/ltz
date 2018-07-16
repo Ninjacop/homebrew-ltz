@@ -5,7 +5,7 @@ source $HOME/ltz/lib/loadbash.sh
 source $HOME/ltz/lib/loaddocs.sh
 source $HOME/ltz/lib/loadpython.sh
 
-#TODO: Make a cool name for my shell CLI
+#TODO: Add SQL, Ruby, Swift -- Assembly, R, Perl -- Delphi, Go, MATLAB -- VB .NET, VB, C# -- PHP, Obj C, PL/SQL
 
 function init ()
 {
