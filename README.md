@@ -2,11 +2,9 @@
 
 An all purpose, simple, lightweight CLT that helps create projects on the fly
     
-## Installation
+## Installation - This only works on Mac/Linux right now!
 
-### Mac
-
-#### First Method - Git
+### First Method - Git
 1. Clone this repo into your Home directory
 
         $ git clone github.com/Ninjacop/ltz.git
@@ -21,7 +19,7 @@ This will open a seperate Terminal window, so once it is done, quit out of termi
 
 4. Open up a new terminal window and you're all set and ready to go!
 
-#### Second Method - Downloading the .zip
+### Second Method - Downloading the .zip
 1. So if you don't have git, you can download a zip of the current build
 
 2. Unzip the build in your Home directory 
@@ -48,7 +46,7 @@ y is the name of the project
     
 ## Options
     
-As of v1.0.1, you can only generate projects in these langauges (not case sensitive):
+As of v1.0.2, you can only generate projects in these langauges (not case sensitive):
 
 - C++ (You have to type in Cplus/cplus because "C++" and "Cpp" are reserved)
 - C
