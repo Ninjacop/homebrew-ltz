@@ -29,6 +29,7 @@ function c-folders ()
         c-makefile
         readme $Name
         changelog
+        gpl3-license
     else 
      echo "ERROR: Project folder \"$Name\" already exists. Delete the existing folder or make a new Project under a different name"
     fi
