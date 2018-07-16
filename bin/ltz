@@ -69,7 +69,42 @@ function ltz ()
         echo "ERROR: Cannot create a new Project directory because no Project name was inputted"
         echo ""
         echo "Type \"project help\" to see all available options and such"
+
+
+    elif [[ $Type = "C" ]] || [[ $Type = "c" ]]
+    then
+        c-folders
+    
+    elif [[ $Name = "" ]]
+    then
+        echo "ERROR: Cannot create a new Project directory because no Project name was inputted"
+        echo ""
+        echo "Type \"project help\" to see all available options and such"
+
+
+    elif [[ $Type = "Java" ]] || [[ $Type = "java" ]]
+    then
+        java-folders
+
+    elif [[ $Name = "" ]]
+    then 
+        echo "ERROR: Cannot create a new Project directory because no Project name was inputted"
+        echo ""
+        echo "Type \"project help\" to see all available options and such"
+
+
+    elif [[ $Type = "Javascript" ]] || [[ $Type = "javascript" ]]
+    then 
+        jscript-folders
+    
+    elif [[ $Name = "" ]]
+    then
+        echo "ERROR: Cannot create a new Project directory because no Project name was inputted"
+        echo ""
+        echo "Type \"project help\" to see all available options and such"
     fi
+
+
     echo "done."
     echo ""
     return 0
