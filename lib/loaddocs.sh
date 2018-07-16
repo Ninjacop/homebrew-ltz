@@ -67,7 +67,7 @@ function intro ()
     TODO: write [great documentation](http://jacobian.org/writing/what-to-write/)  " > intro.md
 }
 
-function glp3-license ()
+function gpl3-license ()
 {
     echo "                    GNU GENERAL PUBLIC LICENSE
                        Version 3, 29 June 2007
