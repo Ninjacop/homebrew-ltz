@@ -51,8 +51,11 @@ y is the name of the project
 As of v1.0.1, you can only generate projects in these langauges (not case sensitive):
 
 - C++ (You have to type in Cplus/cplus because "C++" and "Cpp" are reserved)
-- Bash 
+- C
+- Java
+- Javascript
 - Python (Both 2.x and 3.x)
+- Bash
       
 ## Examples  
       

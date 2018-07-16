@@ -1,6 +1,13 @@
 # Change Log
 All notable changes to this project will be documented in this file. This change log follows the conventions of [keepachangelog.com](http://keepachangelog.com/).  
 
+## [1.0.2]
+### Added
+- Language support for C, Java and Javascript!
+- A GPLv3 License for ltz, because I forgot about that 
+- In addtion, all projects created with ltz include a GPLv3 License
+
+
 ## [1.0.1b]
 ### Added
 - Cleaned up and expanded on 'Installation' on the README
@@ -26,8 +33,10 @@ All notable changes to this project will be documented in this file. This change
 - Base of the project
 - Compatability with Bash, C++ 
 
-[1.0.0]: https://github.com/Ninjacop/homebrew-ltz/releases/tag/1.0.0
+[1.0.0]: https://github.com/Ninjacop/ltz/releases/tag/1.0.0
 
-[1.0.1a]: https://github.com/Ninjacop/homebrew-ltz/releases/tag/1.0.1
+[1.0.1a]: https://github.com/Ninjacop/ltz/releases/tag/1.0.1
 
-[1.0.1b]: https://github.com/Ninjacop/homebrew-ltz/releases/tag/1.0.1
+[1.0.1b]: https://github.com/Ninjacop/ltz/releases/tag/1.0.1
+
+[1.0.2]: https://github.com/Ninjacop123/releases/tag/1.0.2
