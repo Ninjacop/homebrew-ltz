@@ -33,121 +33,70 @@ function ltz ()
     Name="$2"
     echo ""
     echo "Generating folders..."
-
-    if [[ $Type = "" ]] && [[ $Name = "" ]]
-    then 
-        if grep -q "#Setting PATH for ltz" $HOME/.bash_profile
-        then 
-            echo "ERROR: Cannot create a new Project directory if no language and name is given"
-        else 
-            init
-        fi
+    echo ""
     
-
-    elif [[ $Type = "Cplus" ]] || [[ $Type = "cplus" ]]
-    then 
-        cpp-folders
-
-    elif [[ $Type = "" ]]
+    if [[ $Type = "" ]]
     then    
         echo "ERROR: Cannot create a new Project directory because the language is unsupported or you did not type in a language"
         echo ""
         echo "Type \"project help\" to see all available options and such"
+        echo "" 
+    fi
+
+    if [[ $Name = "" ]]
+    then
+    echo "ERROR: Cannot create a new Project directory because no Project name was inputted"
+    echo ""
+    echo "Type \"project help\" to see all available options and such"
+    echo "" 
+    fi
+
+
+    if [[ $Type = "Cplus" ]] || [[ $Type = "cplus" ]]
+    then 
+        cpp-folders
     
 
     elif [[ $Type = "Bash" ]] || [[ $Type = "bash" ]]
     then
         bash-folders
-
-    elif [[ $Name = "" ]]
-    then
-        echo "ERROR: Cannot create a new Project directory because no Project name was inputted"
-        echo ""
-        echo "Type \"project help\" to see all available options and such"
     
 
     elif [[ $Type = "Python" ]] || [[ $Type = "python" ]]
     then
         python-folders
 
-    elif [[ $Name = "" ]]
-    then
-        echo "ERROR: Cannot create a new Project directory because no Project name was inputted"
-        echo ""
-        echo "Type \"project help\" to see all available options and such"
-
 
     elif [[ $Type = "C" ]] || [[ $Type = "c" ]]
     then
         c-folders
-    
-    elif [[ $Name = "" ]]
-    then
-        echo "ERROR: Cannot create a new Project directory because no Project name was inputted"
-        echo ""
-        echo "Type \"project help\" to see all available options and such"
 
 
     elif [[ $Type = "Java" ]] || [[ $Type = "java" ]]
     then
         java-folders
 
-    elif [[ $Name = "" ]]
-    then 
-        echo "ERROR: Cannot create a new Project directory because no Project name was inputted"
-        echo ""
-        echo "Type \"project help\" to see all available options and such"
-
 
     elif [[ $Type = "Javascript" ]] || [[ $Type = "javascript" ]]
     then 
         jscript-folders
-    
-    elif [[ $Name = "" ]]
-    then
-        echo "ERROR: Cannot create a new Project directory because no Project name was inputted"
-        echo ""
-        echo "Type \"project help\" to see all available options and such"
 
 
     elif [[ $Type = "SQL" ]] || [[ $Type = "sql" ]]
     then 
         sql-folders
-    
-    elif [[ $Name = "" ]]
-    then 
-        echo "ERROR: Cannot create a new Project directory because no Project name was inputted"
-        echo ""
-        echo "Type \"project help\" to see all available options and such"
 
 
     elif [[ $Type = "Ruby" ]] || [[ $Type = "ruby" ]]
     then 
         ruby-folders
     
-    elif [[ $Name = "" ]]
-    then 
-        echo "ERROR: Cannot create a new Project directory because no Project name was inputted"
-        echo ""
-        echo "Type \"project help\" to see all available options and such"
 
     elif [[ $Type = "Swift" ]] || [[ $Type = "swift" ]]
     then
         swift-folders
-
-    elif [[ $Name = "" ]]
-    then
-        echo "ERROR: Cannot create a new Project directory because no Project name was inputted"
-        echo ""
-        echo "Type \"project help\" to see all available options and such"
     fi
-    
 
-
-    echo "done."
-    echo ""
-    echo "Created $Type project at $HOME/$Name"
-    echo ""
     return 0
 }
 
