@@ -11,9 +11,9 @@ function python-folders ()
         cd $Name
         mkdir tests
         mkdir sample
-        mkdir docs
+        mkdir doc
 
-        cd docs  
+        cd doc
         intro
         python-license
         sphinx-make
@@ -152,7 +152,17 @@ function python-gitignore ()
     /site
 
     # mypy
-    .mypy_cache/" > .gitignore
+    .mypy_cache/
+    
+    # OS generated files 
+
+    .DS_Store
+    .DS_Store?
+    ._*
+    .Spotlight-V100
+    .Trashes
+    ehthumbs.db
+    Thumbs.db" > .gitignore
 }
 
 function python-license ()

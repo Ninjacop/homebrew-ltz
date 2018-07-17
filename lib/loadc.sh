@@ -10,7 +10,7 @@ function c-folders ()
         mkdir bin
         mkdir src 
         mkdir tests
-        mkdir docs
+        mkdir doc
 
         cd src 
         c-main
@@ -21,7 +21,7 @@ function c-folders ()
         c-tests-makefile
         cd ..
 
-        cd docs 
+        cd doc 
         intro $Name 
         cd ..
 
@@ -76,7 +76,35 @@ function c-gitignore ()
     *.sp
     *.d
     src/tmp
-    *.map" > .gitignore
+    *.map
+
+    # Compiled source 
+    
+    *.com
+    *.class  
+
+    # Packages 
+     
+    # it's better to unpack these files and commit the raw source
+    # git has its own built in compression methods
+    *.7z
+    *.dmg
+    *.gz
+    *.iso
+    *.jar
+    *.rar
+    *.tar
+    *.zip
+
+    # OS generated files 
+
+    .DS_Store
+    .DS_Store?
+    ._*
+    .Spotlight-V100
+    .Trashes
+    ehthumbs.db
+    Thumbs.db" > .gitignore
 }
 
 function c-top-makefile ()

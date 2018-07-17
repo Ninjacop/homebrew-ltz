@@ -44,7 +44,17 @@ function cpp-gitignore ()
     # Executables
     *.exe
     *.out
-    *.app" > .gitignore
+    *.app
+    
+    # OS generated files 
+
+    .DS_Store
+    .DS_Store?
+    ._*
+    .Spotlight-V100
+    .Trashes
+    ehthumbs.db
+    Thumbs.db" > .gitignore
 }
 
 function cpp-make ()

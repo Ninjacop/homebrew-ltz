@@ -205,7 +205,13 @@ function gitignore-jscript ()
     # Lerna
     lerna-debug.log
 
-    # System Files
+    # OS generated files 
+
     .DS_Store
+    .DS_Store?
+    ._*
+    .Spotlight-V100
+    .Trashes
+    ehthumbs.db
     Thumbs.db" > .gitignore 
 }

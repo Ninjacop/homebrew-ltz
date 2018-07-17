@@ -88,6 +88,16 @@ function java-gitignore ()
     *.tar.gz
     *.rar
 
+    # OS generated files 
+
+    .DS_Store
+    .DS_Store?
+    ._*
+    .Spotlight-V100
+    .Trashes
+    ehthumbs.db
+    Thumbs.db
+
     # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
     hs_err_pid*" > .gitignore 
 }
