@@ -8,8 +8,10 @@ source $HOME/ltz/lib/loadc.sh
 source $HOME/ltz/lib/loadjava.sh
 source $HOME/ltz/lib/loadjscript.sh
 source $HOME/ltz/lib/loadsql.sh
+source $HOME/ltz/lib/loadruby.sh
+source $HOME/ltz/lib/loadswift.sh
 
-#TODO: Ruby, Swift -- Assembly, R, Perl -- Delphi, Go, MATLAB -- VB .NET, VB, C# -- PHP, Obj C, PL/SQL
+#TODO: Assembly, R, Perl -- Delphi, Go, MATLAB -- VB .NET, VB, C# -- PHP, Obj C, PL/SQL
 
 function init ()
 {
@@ -117,7 +119,29 @@ function ltz ()
         echo "ERROR: Cannot create a new Project directory because no Project name was inputted"
         echo ""
         echo "Type \"project help\" to see all available options and such"
+
+
+    elif [[ $Type = "Ruby" ]] || [[ $Type = "ruby" ]]
+    then 
+        ruby-folders
+    
+    elif [[ $Name = "" ]]
+    then 
+        echo "ERROR: Cannot create a new Project directory because no Project name was inputted"
+        echo ""
+        echo "Type \"project help\" to see all available options and such"
+
+    elif [[ $Type = "Swift" ]] || [[ $Type = "swift" ]]
+    then
+        swift-folders
+
+    elif [[ $Name = "" ]]
+    then
+        echo "ERROR: Cannot create a new Project directory because no Project name was inputted"
+        echo ""
+        echo "Type \"project help\" to see all available options and such"
     fi
+    
 
 
     echo "done."
