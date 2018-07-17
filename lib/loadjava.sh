@@ -1,6 +1,6 @@
 #!/bin/bash
 
-source $HOME/ltz/bin/loaddocs.sh
+source $HOME/ltz/lib/loaddocs.sh
 
 function java-folders ()
 {

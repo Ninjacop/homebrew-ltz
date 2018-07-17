@@ -7,6 +7,9 @@ function c-folders ()
     cd $HOME 
     if [ ! -d $Name ]
     then
+        mkdir $Name
+        cd $Name 
+        
         mkdir bin
         mkdir src 
         mkdir tests
