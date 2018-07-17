@@ -1,12 +1,15 @@
 #!/bin/bash
 
-source $HOME/ltz/loaddocs.sh
+source $HOME/ltz/lib/loaddocs.sh
 
 function sql-folders ()
 {
-        cd $HOME 
+    cd $HOME 
     if [ ! -d $Name ]
     then
+        mkdir $Name 
+        cd $Name 
+
         mkdir tables
         mkdir views 
         mkdir stored-procedures
