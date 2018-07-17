@@ -45,4 +45,6 @@ All notable changes to this project will be documented in this file. This change
 
 [1.0.1b]: https://github.com/Ninjacop/ltz/releases/tag/1.0.1
 
-[1.0.2]: https://github.com/Ninjacop123/releases/tag/1.0.2
+[1.0.2]: https://github.com/Ninjacop/releases/tag/1.0.2
+
+[1.0.3]: https://github.com/Ninjacop/releases/tag/1.0.3
