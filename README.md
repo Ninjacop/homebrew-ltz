@@ -46,7 +46,7 @@ y is the name of the project
     
 ## Options
     
-As of v1.0.2, you can only generate projects in these langauges (not case sensitive):
+As of v1.0.3, you can only generate projects in these langauges (not case sensitive):
 
 - C++ (You have to type in Cplus/cplus because "C++" and "Cpp" are reserved)
 - C
@@ -54,6 +54,9 @@ As of v1.0.2, you can only generate projects in these langauges (not case sensit
 - Javascript
 - Python (Both 2.x and 3.x)
 - Bash
+- SQL
+- Ruby
+- Swift
       
 ## Examples  
       
@@ -61,6 +64,8 @@ As of v1.0.2, you can only generate projects in these langauges (not case sensit
 
         Generating folders...
         done.
+
+        Created bash project at ~/Users/Name/example
       
 ### Bugs  
       
