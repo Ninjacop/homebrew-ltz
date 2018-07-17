@@ -9,9 +9,7 @@ function python-folders ()
     then 
         mkdir $Name
         cd $Name
-        mkdir tests
-        mkdir sample
-        mkdir doc
+        mkdir tests sample doc
 
         cd doc
         intro

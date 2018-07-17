@@ -10,13 +10,7 @@ function swift-folders ()
         mkdir $Name 
         cd $Name 
 
-        mkdir controllers
-        mkdir views 
-        mkdir models 
-        mkdir nibs 
-        mkdir tools 
-        mkdir resources
-        mkdir doc 
+        mkdir controllers views models nibs tools resources doc
 
         cd doc 
         intro $Name 

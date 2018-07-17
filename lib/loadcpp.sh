@@ -108,21 +108,13 @@ function cpp-folders ()
         mkdir $Name
         cd $Name
 
-        mkdir bin
-        mkdir build
-        mkdir doc 
-        mkdir include
-        mkdir lib
-        mkdir spike
+        mkdir bin build doc include lib spike src test
 
-        mkdir src
         cd src
         mkdir "Resource Files"
         mkdir "Template Files"
         mkdir "Header Files"
         cd ..
-
-        mkdir test
 
         cd doc 
         intro $Name 

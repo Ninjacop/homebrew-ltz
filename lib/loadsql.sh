@@ -10,15 +10,8 @@ function sql-folders ()
         mkdir $Name 
         cd $Name 
 
-        mkdir tables
-        mkdir views 
-        mkdir stored-procedures
-        mkdir functions
-        mkdir synonyms
-        mkdir types
-        mkdir assemblies
-        mkdir doc
-
+        mkdir tables views stored-procedures functions synonyms types assemblies doc
+        
         cd doc 
         intro $Name 
         cd ..

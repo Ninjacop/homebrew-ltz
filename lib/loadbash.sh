@@ -9,11 +9,8 @@ function bash-folders ()
     then 
         mkdir $Name
         cd $Name
-        mkdir test
-        mkdir bin
-        mkdir lib
+        mkdir test bin lib doc 
 
-        mkdir doc 
         cd doc 
         intro $Name
         cd ..

@@ -10,10 +10,7 @@ function c-folders ()
         mkdir $Name
         cd $Name 
         
-        mkdir bin
-        mkdir src 
-        mkdir tests
-        mkdir doc
+        mkdir bin src tests doc
 
         cd src 
         c-main

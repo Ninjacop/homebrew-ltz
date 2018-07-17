@@ -10,12 +10,7 @@ function ruby-folders ()
         mkdir $Name 
         cd $Name
 
-        mkdir bin
-        mkdir doc
-        mkdir data 
-        mkdir ext 
-        mkdir lib
-        mkdir tests
+        mkdir bin doc data ext lib tests
 
         cd doc 
         intro $Name 

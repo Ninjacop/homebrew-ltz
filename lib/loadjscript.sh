@@ -9,8 +9,7 @@ function jscript-folders ()
     then 
         mkdir $Name
         cd $Name
-        mkdir bin 
-        mkdir etc
+        mkdir bin etc
 
         mkdir -p src/client/assets
         mkdir -p src/client/components
@@ -24,17 +23,13 @@ function jscript-folders ()
         cd ...
 
         mkdir -p src/server
+
         cd src/server  
         mkdir plugins
         index-jscript
+
         cd plugins
-        mkdir admin 
-        mkdir auth 
-        mkdir caching
-        mkdir login
-        mkdir metrics
-        mkdir orm
-        mkdir socketsd
+        mkdir admin auth caching login metrics orm socketsd
 
         mkdir -p src/lib
 
@@ -49,6 +44,7 @@ function jscript-folders ()
         package-jscript
         npmignore-jscript
         gitignore-jscript
+        
         echo ""
         echo "server.js is the same thing as index.js, so put all your data there, and act like it is \" main\""
         echo "As of now, you have to create your own Dockerfile, sorry!"
