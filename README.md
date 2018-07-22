@@ -57,6 +57,9 @@ As of v1.0.3, you can only generate projects in these langauges (not case sensit
 - SQL
 - Ruby
 - Swift
+- Assembly (Created for x86, but you can use it for different assemblers (ex. MASM))
+- R 
+- Perl 
       
 ## Examples  
       
