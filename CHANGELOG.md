@@ -1,6 +1,12 @@
 # Change Log
 All notable changes to this project will be documented in this file. This change log follows the conventions of [keepachangelog.com](http://keepachangelog.com/).  
 
+## [1.0.4]
+### Added
+- Language support for Assembly, R and Perl
+- Refactored code and fixed some small bugs 
+
+
 ## [1.0.3]
 ### Added 
 - Language support for SQL, Ruby and Swift!
