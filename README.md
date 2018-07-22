@@ -69,8 +69,14 @@ As of v1.0.3, you can only generate projects in these langauges (not case sensit
       
 ### Bugs  
       
-None yet  
+#### Fixed as of 1.0.4
+- Files and folders were being created not inside a project folder and spilling all over the Home directory
       
 ## License  
       
 Copyright © 2018 Ninjacop
+
+Protected by GNU General Public License 3.0 (GNU GPL v3)
+
+See LICENSE for in-depth detail
+
