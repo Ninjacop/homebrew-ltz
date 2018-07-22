@@ -45,9 +45,6 @@ function jscript-folders ()
         npmignore-jscript
         gitignore-jscript
         
-        echo ""
-        echo "server.js is the same thing as index.js, so put all your data there, and act like it is \" main\""
-        echo "As of now, you have to create your own Dockerfile, sorry!"
     else 
         echo "ERROR: Project folder \"$Name\" already exists. Delete the existing folder or make a new Project under a different name"
     fi
