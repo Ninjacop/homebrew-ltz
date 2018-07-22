@@ -10,8 +10,11 @@ source $HOME/ltz/lib/loadjscript.sh
 source $HOME/ltz/lib/loadsql.sh
 source $HOME/ltz/lib/loadruby.sh
 source $HOME/ltz/lib/loadswift.sh
+source $HOME/ltz/lib/loadasm.sh
+source $HOME/ltz/lib/loadr.sh
+source $HOME/ltz/lib/loadperl.sh
 
-#TODO: Assembly, R, Perl -- Delphi, Go, MATLAB -- VB .NET, VB, C# -- PHP, Obj C, PL/SQL
+#TODO: Delphi, Go, MATLAB -- VB .NET, VB, C# -- PHP, Obj C, PL/SQL
 
 function init ()
 {
@@ -80,6 +83,10 @@ function ltz ()
     elif [[ $Type = "Javascript" ]] || [[ $Type = "javascript" ]]
     then 
         jscript-folders
+        echo ""
+        echo "server.js is the same thing as index.js, so put all your data there, and act like it is \" main\""
+        echo "As of now, you have to create your own Dockerfile, sorry!"
+        echo ""
 
 
     elif [[ $Type = "SQL" ]] || [[ $Type = "sql" ]]
@@ -95,7 +102,27 @@ function ltz ()
     elif [[ $Type = "Swift" ]] || [[ $Type = "swift" ]]
     then
         swift-folders
+
+    elif [[ $Type = "Assembly" ]] || [[ $Type = "assembly" ]]
+    then
+        asm-folders
+        echo "" 
+        echo "This made for x86 assembly, but feel free to change folders based on your version"
+        echo "(ex. DASM, MASM, FASM)"
+        echo ""
+
+    elif [[ $Type = "R" ]] || [[ $Type = "r" ]]
+    then
+        r-folders
+
+    elif [[ $Type = "Perl" ]] || [[ $Type = "perl" ]]
+    then
+        perl-folders
     fi
+
+    echo "" 
+    echo "done."
+    echo ""
 
     return 0
 }
